@@ -49,7 +49,7 @@ const Home ={
             }
             return total;
         },
-        itelTotalAmount() {
+        itemTotalAmount() {
             let itemTotal =0;
             for (let item in this.cart) {
                 itemTotal= itemTotal + (this.cart[item].quantity)
@@ -85,7 +85,7 @@ const Home ={
             })
         },
         cartPlusOne(product) {
-            product.quantity = product.quantity ++;
+            product.quantity = product.quantity + 1;
         },
         cartMinusOne(product,id) {
             if(product.quantity ==1) {
